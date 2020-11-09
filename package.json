@@ -9,6 +9,6 @@
   "author": "",
   "private": true,
   "dependencies": {
-    "@antv/g2": "^4.0.15"
+    "@antv/g2": "^3.5.17"
   }
 }
