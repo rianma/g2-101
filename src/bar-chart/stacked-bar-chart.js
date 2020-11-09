@@ -1,25 +1,4 @@
-import G2, { Chart } from '@antv/g2'
-
-// c1: 柱状图
-const data = [
-  { genre: 'Sports', sold: 275 },
-  { genre: 'Strategy', sold: 125 },
-  { genre: 'Action', sold: 120 },
-  { genre: 'Shooter', sold: 350 },
-  { genre: 'Other', sold: 150 },
-]
-
-const chart1 = new Chart({
-  container: 'c1',
-  width: 600,
-  height:300
-})
-
-chart1.data(data)
-
-chart1.interval().position('genre*sold')
-
-chart1.render()
+import { Chart } from '@antv/g2'
 
 // c2: 堆积柱状图
 const c2data = [
@@ -46,7 +25,18 @@ const chart2 = new Chart({
   height: 300
 })
 
-chart2.data(c2data)
+const C_MAP = {
+  CN: '中国',
+  JP: '日本',
+  US: '美国'
+}
+
+chart2.source(c2data.map(item => {
+  return {
+    ...item,
+    country: C_MAP[item.country]
+  }
+}))
 
 // 设置纵轴字段
 chart2.scale('boxOffice', { nice: true })
