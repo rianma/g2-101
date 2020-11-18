@@ -4,13 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Line Chart Demos</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" defer></script>
   <script src="./index.js" defer></script>
 </head>
 <body>
   <h1>折线图 Demos</h1>
 
-  <h2>简单折线图</h2>
   <div id="c1"></div>
+
+  <div id="c2">
+    <h2>简单折线图</h2>
+    <div id="c2-chart">
+    </div>
+    <button @click="updateC2Data">刷新数据</button>
+  </div>
   
 </body>
 </html>
