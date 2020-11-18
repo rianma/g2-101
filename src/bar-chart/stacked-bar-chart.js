@@ -47,6 +47,22 @@ chart2.interval()
   .color('country')
   .adjust('stack')
 
+/**
+ * 对于复杂场景，需要变更数据的，就用监听事件的方式，获取 items 再修改
+ * @see https://g2-v3.antv.vision/zh/docs/manual/tutorial/tooltip#%E6%A0%BC%E5%BC%8F%E5%8C%96-tooltip-%E7%9A%84%E6%98%BE%E7%A4%BA%E5%86%85%E5%AE%B9
+ **/ 
+chart2.on('tooltip:change', (event) => {
+  const { items } = event
+  const sum = items.reduce((s, item) => s + (item.value * 1), 0)
+  const totalItem = {
+    title: '总数',
+    name: '总数',
+    value: sum,
+    index: items.length
+  }
+  items.push(totalItem)
+})
+
 // 使用 .tooltip() API 以显示 total 总数的值
 
 chart2.render()
