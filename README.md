@@ -10,3 +10,7 @@
 
 * 代码仓库：[rianma/g2-101](https://github.com/rianmna/g2-101)
 * Azure Static Web Apps 项目主页：[g2-101 Microsoft Azure](https://portal.azure.com/#@myan94hotmail.onmicrosoft.com/resource/subscriptions/bdb86fed-e7d0-4d6b-95e1-b9f221408c86/resourcegroups/resources/providers/Microsoft.Web/staticSites/g2-101/staticsite)
+
+## Notes & Links
+
+* [@antv/g2](https://npm.im/@antv/g2)
