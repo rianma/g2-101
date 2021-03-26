@@ -1,4 +1,7 @@
-import { Chart } from '@antv/g2'
+/**
+ * @type {import('@antv/g2')}
+ */
+const G2 = window.G2
 
 // c2: 堆积柱状图
 const c2data = [
@@ -35,7 +38,7 @@ const c2data = [
   { genre: 'Race', country: 'JP', sold: 3000 },
 ]
 
-const chart2 = new Chart({
+const chart2 = new G2.Chart({
   container: 'c2',
   forceFit: true,
   height: 300

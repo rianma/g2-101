@@ -1,4 +1,7 @@
-import { Chart } from '@antv/g2'
+/**
+ * @type {import('@antv/g2')}
+ */
+const G2 = window.G2
 
 const c3data = [
   { genre: 'Sports', country: 'CN', sold: 120 },
@@ -18,7 +21,7 @@ const c3data = [
   { genre: 'Other', country: 'JP', sold: 3000 },
 ]
 
-const chart3 = new Chart({
+const chart3 = new G2.Chart({
   container: 'c3',
   width: 600,
   height: 300
