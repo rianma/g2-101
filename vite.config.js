@@ -4,13 +4,13 @@ const { resolve } = require('path')
  * @type {import('vite').UserConfig}
  */
 const config = {
-  root: 'src',
   build: {
+    outDir: 'dist',
     rollupOptions: {
       input: {
-        index: resolve(__dirname, 'src/index.html'),
-        'bar-chart': resolve(__dirname, 'src/bar-chart/index.html'),
-        'line-chart': resolve(__dirname, 'src/line-chart/index.html')
+        index: resolve(__dirname, 'index.html'),
+        'bar-chart': resolve(__dirname, 'bar-chart/index.html'),
+        'line-chart': resolve(__dirname, 'line-chart/index.html')
       }
     }
   }
