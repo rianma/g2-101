@@ -2,12 +2,10 @@
   "name": "g2-101",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build src/index.html src/**/*.html",
-    "start": "npm run dev",
-    "dev": "parcel src/index.html"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "author": "",
   "private": true,
@@ -15,6 +13,6 @@
     "@antv/g2": "^3.5.17"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "vite": "^2.1.3"
   }
 }
