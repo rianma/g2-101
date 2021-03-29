@@ -1,4 +1,7 @@
-import { Chart } from '@antv/g2'
+/**
+ * @type {import('@antv/g2')}
+ */
+const G2 = window.G2
 
 const RAW_DATA = [
     { genre: 'Sports', sold: 275 },
@@ -69,7 +72,7 @@ const app = new Vue({
             })
         },
         initChart: function () {
-            const chart = new Chart({
+            const chart = new G2.Chart({
                 container: 'c2-chart',
                 width: 600,
                 height:300

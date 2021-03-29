@@ -1,6 +1,9 @@
-import { Chart } from '@antv/g2'
+/**
+ * @type {import('@antv/g2')}
+ */
+const G2 = window.G2
 
-const chart = new Chart({
+const chart = new G2.Chart({
   container: 'c1',
   width: 600,
   height:300
